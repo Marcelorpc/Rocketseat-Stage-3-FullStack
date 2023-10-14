@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.4rem, 1vw + 1rem, 2rem);
+  color: #A54328;
+}
+
+main {
+  max-width: 32rem;
+  margin-inline: auto;
+  padding: 5.3rem 3.7rem 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+}
+
+main h1 {
+  font-size: 2.8rem;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 4.6rem;
+}
+
+#cheesecake {
+  width: 100%;
+}
+
+.ingredients h1 {
+  margin-bottom: 3.2rem;
+}
+
+.ingredients h2 {
+  font-size: 1.4rem;
+}
+
+.ingredients ol, .ingredients ul {
+  padding-left: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.ingredients button {
+  padding: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  color: white;
+  background-color: #A54328;
+  border: none;
+  border-radius: 0.6rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #F9F4FB;
+  }
+
+  main {
+    max-width: fit-content;
+    padding: 4rem 8rem;
+    flex-direction: row;
+    gap: 18.9rem;
+  }
+
+  main > div {
+    flex: 1;
+  }
+
+  main h1 {
+    font-size: 4rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  .ingredients h2 {
+    font-size: 2rem;
+  }
+
+  .ingredients button {
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
